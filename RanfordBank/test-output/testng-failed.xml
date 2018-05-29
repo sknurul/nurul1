@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.ranford1.RanfordBank.Textexecution">
+        <methods>
+          <include name="verifylaunch"/>
+          <include name="verifylaunch"/>
+          <include name="verifylaunch"/>
+          <include name="verifylogin"/>
+        </methods>
+      </class> <!-- com.ranford1.RanfordBank.Textexecution -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test name="Test3(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.ranford1.RanfordBank.Textexecution">
+        <methods>
+          <include name="verifylaunch"/>
+          <include name="verifylaunch"/>
+          <include name="verifylaunch"/>
+          <include name="verifylogin"/>
+        </methods>
+      </class> <!-- com.ranford1.RanfordBank.Textexecution -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ranford1.RanfordBank.Textexecution">
+        <methods>
+          <include name="verifylaunch"/>
+          <include name="verifylaunch"/>
+          <include name="verifylaunch"/>
+          <include name="verifylogin"/>
+          <include name="verify_webtable1"/>
+        </methods>
+      </class> <!-- com.ranford1.RanfordBank.Textexecution -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

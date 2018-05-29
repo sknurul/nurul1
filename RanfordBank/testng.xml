@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="Test1">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.ranford1.RanfordBank.Textexecution">
+      <methods>
+      <include name="verifylaunch"></include>
+      <include name="verifylogin"></include>
+      <include name="verifybranches"></include>
+      </methods>
+      </class>
+      </classes>
+  </test> 
+   <test thread-count="5" name="Test2">
+   <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.ranford1.RanfordBank.Textexecution">
+      <methods>
+       <include name="verifylaunch"></include>
+      <include name="verifylogin"></include>
+      <include name="verifynewbranch"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+   <test thread-count="5" name="Test3">
+   <parameter name="browser" value="ie"></parameter>
+    <classes>
+      <class name="com.ranford1.RanfordBank.Textexecution">
+      <methods>
+      <include name="verifylaunch"></include>
+      <include name="verifylogin"></include>
+      <include name="verifynewrole"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> 
